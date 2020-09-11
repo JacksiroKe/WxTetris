@@ -1,4 +1,4 @@
-#include "Board.hpp"
+#include "Board.h"
 
 Board::Board(wxFrame* parent) :
     wxPanel(parent, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxBORDER_NONE)

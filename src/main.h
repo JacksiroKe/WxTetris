@@ -3,7 +3,7 @@
 
 #include <wx/wx.h>
 
-class TetrisApp : public wxApp
+class MainApp : public wxApp
 {
 public:
     virtual bool OnInit();

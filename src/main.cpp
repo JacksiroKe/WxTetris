@@ -1,22 +1,23 @@
-#include "main.hpp"
-#include "TetrisGame.hpp"
+#include "main.h"
+#include "WxTetris.h"
 
 #ifdef __WXMAC__
 #include <ApplicationServices/ApplicationServices.h>
 #endif /* __WXMAC__ */
 
-IMPLEMENT_APP(TetrisApp);
+IMPLEMENT_APP(MainApp);
 
-bool TetrisApp::OnInit()
+bool MainApp::OnInit()
 {
 #ifdef __WXMAC__
     ProcessSerialNumber psn;
     GetCurrentProcess(&psn);
     TransformProcessType(&psn, kProcessTransformToForegroundApplication);
 #endif /* __WXMAC__ */
-    TetrisGame* tetrisGame = new TetrisGame(wxT("WxTetris"));
-    tetrisGame->Centre();
-    tetrisGame->Show(true);
+
+    WxTetris* game = new WxTetris(wxT("WxTetris Game"));
+    game->Centre();
+    game->Show(true);
     
     return true;
 }

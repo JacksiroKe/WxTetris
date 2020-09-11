@@ -1,6 +1,6 @@
 #include <algorithm>
 
-#include "Piece.hpp"
+#include "Piece.h"
 
 using namespace std;
 

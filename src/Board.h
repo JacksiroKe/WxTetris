@@ -3,7 +3,7 @@
 
 #include <wx/wx.h>
 
-#include "Piece.hpp"
+#include "Piece.h"
 
 #define TIMER_INTERVAL 500
 
