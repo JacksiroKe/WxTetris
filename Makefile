@@ -4,8 +4,8 @@ LD	= $(CC)
 LDFLAGS = #unused
 RM	= rm
 
-EXE 	= Tetris
-SRCS 	= Piece.cpp Board.cpp TetrisGame.cpp main.cpp
+EXE 	= WxTetris
+SRCS 	= Piece.cpp Board.cpp WxTetris.cpp main.cpp
 OBJS	= ${SRCS:.cpp=.o}
 
 WXFLAGS = `wx-config --cppflags`
